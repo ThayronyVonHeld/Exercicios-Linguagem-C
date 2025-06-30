@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-main() {
+int main() {
 	char nome[50];
 	
 	printf("Digite seu nome: ");

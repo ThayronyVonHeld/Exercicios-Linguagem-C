@@ -11,6 +11,7 @@ int main(){
 	printf("Ha quantos anos voce fuma? ");
 		scanf("%d", anos);
 		
-	vida_perdida = (cigarros * 10) 	
+	vida_perdida = (cigarros * 10) // comentario teste
+		
 }
 

@@ -3,7 +3,7 @@
 int salario = 0;
 char nome[50];
 
-main(){
+int main(){
 	printf("Qual seu nome ?");
 	scanf("%s", nome);
 	

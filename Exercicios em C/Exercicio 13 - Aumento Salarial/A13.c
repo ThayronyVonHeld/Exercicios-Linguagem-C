@@ -9,7 +9,7 @@ int main() {
 	
 	aumento = salario + (salario*0.15);
 	
-	printf("Seu novo salario e de: %.2f", aumento);
+	printf("Seu novo salario com 15 por cento de aumento foi de: %.2f", aumento);
 	
 	return 0;
 	

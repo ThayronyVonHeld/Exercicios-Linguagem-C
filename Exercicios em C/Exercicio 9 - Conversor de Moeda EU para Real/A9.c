@@ -2,7 +2,7 @@
 
 float valor, converter;
 
-main(){
+int main(){
 	
 	printf("digite quanto possui em sua carteira[REAL]: ");
 	scanf("%f", &valor);

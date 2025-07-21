@@ -3,9 +3,9 @@
 int main()
 {
 
-    float distancia, valor_viagem, valor_viagem2;
+    float distancia, valor_viagem;
 
-    printf("Qual distacia que deseja viajar [km]: ");
+    printf("Qual distancia deseja viajar [km]: ");
     scanf("%f", &distancia);
 
     
@@ -15,7 +15,7 @@ int main()
         printf("Sua viagem ficou no valor de R$ %.2f", valor_viagem);
     }
     else {
-        valor_viagem2 = distancia * 0.45;
+        valor_viagem = distancia * 0.45;
            printf("Sua viagem ficou no valor de R$ %.2f", valor_viagem2);
     }
     return 0;

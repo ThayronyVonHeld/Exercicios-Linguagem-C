@@ -30,34 +30,55 @@ printf("------------------------------------------------\n");
 printf("Agora sua vez %s! Digite sua escolha: ", jogador2);
 escolha_jogador2 = getch();
 
-if ((escolha_jogador1 = 1) & (escolha_jogador2 = 2)){
+if ((escolha_jogador1 = 1) && (escolha_jogador2 = 1) || (escolha_jogador1 = 2) && (escolha_jogador2 = 2) || (escolha_jogador1 = 3) && (escolha_jogador2 = 3)){
     printf("----------------------------------------\n");
-   printf("Parabens %s, Voce Ganhou!\n", jogador2);
-   printf("%s, escolheu: PEDRA\n", jogador1);
-   printf("%s, escolheu: PAPEL\n", jogador2);
+   printf("Parabens %s e %s, Voce dois ganharam, ou seja, Houve um EMPATE!!\n", jogador1, jogador2);
+   printf("%s, escolheu: %d\n", jogador1, escolha_jogador1);
+   printf("%s, escolheu: %d\n", jogador2, escolha_jogador2);
    printf("-----------------------------------------");
 }
-else if ((escolha_jogador1 = 1) & (escolha_jogador2 = 3)){
+else if ((escolha_jogador1 = 1) && (escolha_jogador2 = 2)){
+    printf("----------------------------------------\n");
+   printf("Parabens %s, Voce Ganhou!\n\n", jogador2);
+   printf("%s, escolheu: PAPEL\n", jogador1);
+   printf("%s, escolheu: PEDRA\n", jogador2);
+   printf("-----------------------------------------");
+}
+else if ((escolha_jogador1 = 1) && (escolha_jogador2 = 3)){
     printf("----------------------------------------\n");
    printf("Parabens %s, Voce Ganhou!\n\n", jogador1);
    printf("%s, escolheu: PEDRA\n", jogador1);
    printf("%s, escolheu: TESOURA\n", jogador2);
    printf("-----------------------------------------");
 }
-else if ((escolha_jogador1 = 2) & (escolha_jogador2 = 3)){
+    else if ((escolha_jogador1 = 2) && (escolha_jogador2 = 1)){
     printf("----------------------------------------\n");
-   printf("Parabens %s, Voce Ganhou!\n\n", jogador2);
+   printf("Parabens %s, Voce Ganhou!\n\n", jogador1);
    printf("%s, escolheu: PAPEL\n", jogador1);
-   printf("%s, escolheu: TESOURA\n", jogador2);
+   printf("%s, escolheu: PEDRA\n", jogador2);
    printf("-----------------------------------------");
-}
-    else if ((escolha_jogador1 = 2) & (escolha_jogador2 = 3)){
+   }
+    else if ((escolha_jogador1 = 2) && (escolha_jogador2 = 3)){
     printf("----------------------------------------\n");
    printf("Parabens %s, Voce Ganhou!\n\n", jogador2);
    printf("%s, escolheu: PAPEL\n", jogador1);
    printf("%s, escolheu: TESOURA\n", jogador2);
    printf("-----------------------------------------");
    }
+    else if ((escolha_jogador1 = 3) && (escolha_jogador2 = 1)){
+    printf("----------------------------------------\n");
+   printf("Parabens %s, Voce Ganhou!\n\n", jogador2);
+   printf("%s, escolheu: TESOURA\n", jogador1);
+   printf("%s, escolheu: PEDRA\n", jogador2);
+   printf("-----------------------------------------");
+    }
+   else if ((escolha_jogador1 = 3) && (escolha_jogador2 = 2)){
+    printf("----------------------------------------\n");
+   printf("Parabens %s, Voce Ganhou!\n\n", jogador1);
+   printf("%s, escolheu: TESOURA\n", jogador1);
+   printf("%s, escolheu: PAPEL\n", jogador2);
+   printf("-----------------------------------------");
+   }
 else 
-printf("teste");
+printf("error");
 }

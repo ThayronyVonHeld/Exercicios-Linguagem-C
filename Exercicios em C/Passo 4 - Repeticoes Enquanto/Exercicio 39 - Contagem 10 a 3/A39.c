@@ -4,13 +4,12 @@ int main(){
 
     int contador;
     
-    contador = 6;
+    contador = 10;
 
-    while(contador <= 11){
+    while(contador >= 3){
     printf("%d\n", contador);
-    contador++;
+    contador--;
     }
 
     return 0;
-
 }

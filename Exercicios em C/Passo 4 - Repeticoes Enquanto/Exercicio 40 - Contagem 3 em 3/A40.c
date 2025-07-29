@@ -3,14 +3,13 @@
 int main(){
 
     int contador;
-    
-    contador = 6;
 
-    while(contador <= 11){
+    contador = 0;
+
+    while(contador <= 18){
     printf("%d\n", contador);
-    contador++;
+    contador += 3;
     }
 
     return 0;
-
 }

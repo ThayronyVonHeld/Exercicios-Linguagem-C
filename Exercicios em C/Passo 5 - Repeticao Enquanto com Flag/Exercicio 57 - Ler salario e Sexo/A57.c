@@ -1,23 +1,41 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main()
-{
-    int soma = 0, contador = 0;
+int main() {
+    char genero;
     float salario;
-    
+    float fsalario = 0, msalario = 0; // totais
+    int f = 0, m = 0;                 // contadores
+    int continuar = 1;                // flag: 1 = continuar, 0 = parar
 
-    while (contador < 10)
-    {
-        printf("Digite seu salario: ");
+    while (continuar) {               // enquanto a flag for 1
+        printf("Digite o genero do funcionario [F/M]: ");
+        scanf(" %c", &genero);
+
+        printf("Digite o salario: ");
         scanf("%f", &salario);
 
-        soma = soma + idade;
-        contador++;
+        if (genero == 'F' || genero == 'f') {
+            fsalario += salario;
+            f++;
+        } else if (genero == 'M' || genero == 'm') {
+            msalario += salario;
+            m++;
+        } else {
+            printf("Genero invalido! Digite apenas F ou M.\n");
+            continue; // repete o loop sem contar esse funcionário
+        }
+
+        char resposta;
+        printf("Deseja cadastrar outro funcionario? [S/N]: ");
+        scanf(" %c", &resposta);
+
+        if (resposta == 'N' || resposta == 'n') {
+            continuar = 0; // muda a flag para 0 → encerra o loop
+        }
     }
 
-    media = (float)soma / contador;
-
-    printf("Media das idades: %.2f\n", media);
+    printf("\nTotal de salarios pagos a mulheres: %.2f\n", fsalario);
+    printf("Total de salarios pagos a homens: %.2f\n", msalario);
 
     return 0;
 }

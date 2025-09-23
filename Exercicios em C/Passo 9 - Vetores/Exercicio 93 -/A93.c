@@ -7,7 +7,7 @@ int main(){
         
     for(i = 0; i < 15; i++ ){
         printf("Digite o %d numero: ", i+1);
-        scanf("%d", &vetor[i]);
+        scanf("%d", vetor[i]);
     }
 
     printf("vetor digitado:\n");

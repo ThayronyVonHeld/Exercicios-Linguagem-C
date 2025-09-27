@@ -36,7 +36,7 @@ int main() {
     printf("A maior nota aparece nas posicoes: ");
     for (i = 0; i < 10; i++) {
         if (nota[i] == maior_nota) {
-            printf("%d ", i);  /
+            printf("%d ", i);  
         }
     }
     printf("\n");

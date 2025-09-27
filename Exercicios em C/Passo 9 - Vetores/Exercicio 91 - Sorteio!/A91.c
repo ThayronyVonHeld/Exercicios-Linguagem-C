@@ -10,7 +10,7 @@ int main(){
     srand(time(NULL));
 
     for(i = 0; i < 7; i++ ){
-        vetor[i] = rand() % 100;  // números aleatórios entre 0 e 99
+        vetor[i] = rand() % 100;  
     }
 
     printf("vetor digitado:\n");

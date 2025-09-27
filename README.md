@@ -58,7 +58,7 @@ Este repositório segue o curso de Algoritmos do **@CursoEmVideo**, que inclui a
 
 ## 🔗 Links
 
-- Curso de Algoritmos do **@CursoEmVideo**: [https://www.cursoemvideo.com](https://www.cursoemvideo.com)  
+- Curso de Algoritmos do **@CursoEmVideo**: [https://www.cursoemvideo.com/curso/curso-de-algoritmo/](https://www.cursoemvideo.com/curso/curso-de-algoritmo/)  
 
 ---
 

@@ -10,7 +10,7 @@ Foram meses de foco e dedicação, passando por diversos conceitos fundamentais 
 
 Os exercícios abordam os seguintes tópicos:
 
--**Sequencia Básicas**
+- **Sequencia Básicas**
 - **Estruturas condicionais** (`if`, `else`, `switch`)  
 - **Estruturas de repetição** (`for`, `while`, `do-while`)  
 - **Vetores (arrays)**  
